@@ -51,7 +51,7 @@ def get_english_meaning(yaml_library, japanese_emoticon)
       end
       
       if language[:japanese] != japanese_emoticon
-        return "Sorry, that emoticon was not found"
+        "Sorry, that emoticon was not found"
       end
       
     end
