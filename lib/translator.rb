@@ -8,17 +8,6 @@ require 'yaml'
 #   - "☜(⌒▽⌒)☞"
 # => "angel" => ["O:)", - "☜(⌒▽⌒)☞" ]
 
-  # happy:
-  #   - ":)"
-  #   - "(＾ｖ＾)"
-
-  # {
-  #     'happy' => {
-  #       :english => ":)",
-  #       :japanese => "(＾ｖ＾)"
-  #     }
-  # }
-
   
 def load_library(yaml_library)
   # code goes here
@@ -35,6 +24,17 @@ def load_library(yaml_library)
   end
   translation
 end
+
+  # happy:
+  #   - ":)"
+  #   - "(＾ｖ＾)"
+
+  # {
+  #     'happy' => {
+  #       :english => ":)",
+  #       :japanese => "(＾ｖ＾)"
+  #     }
+  # }
 
 def get_japanese_emoticon(yaml_library, english_emoticon)
   # code goes here
