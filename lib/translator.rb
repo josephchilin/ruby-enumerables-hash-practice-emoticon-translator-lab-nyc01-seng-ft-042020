@@ -30,7 +30,7 @@ def load_library(yaml_library)
     eng_emoji = language[0]
     jap_emoji = language[1]
     
-    
+    binding.pry
     translation[meaning][:english] = eng_emoji
     translation[meaning][:japanese] = jap_emoji
   end
