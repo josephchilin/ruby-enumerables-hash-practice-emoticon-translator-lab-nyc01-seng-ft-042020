@@ -1,13 +1,52 @@
 # require modules here
+require 'pry'
+require 'yaml'
 
-def load_library
+
+# angel:
+#   - "O:)"      
+#   - "☜(⌒▽⌒)☞"
+# => "angel" => ["O:)", - "☜(⌒▽⌒)☞" ]
+
+  
+def load_library(yaml_library)
+  # code goes here
+  library = YAML.load_file(yaml_library)
+  translation = {}
+  
+  library.each do |emoji, language|
+    translation[emoji] = {}
+    eng_emoji = language[0]
+    jap_emoji = language[1]
+    
+    
+    translation[emoji][:english] = eng_emoji
+    translation[emoji][:japanese] = jap_emoji
+  end
+  translation
+end
+
+def get_japanese_emoticon(file_path, english_emoticon)
+  # code goes here
+    library = load_library(file_path)
+  
+    library.each do |emoji, language|
+      if language[:english] == english_emoticon
+        return language[:japanese]
+        
+      end
+    
+    end
+  
+  
+end
+
+def get_english_meaning(file_path, japanese_emoticon)
   # code goes here
 end
 
-def get_japanese_emoticon
-  # code goes here
-end
 
-def get_english_meaning
-  # code goes here
-end
+
+
+
+
