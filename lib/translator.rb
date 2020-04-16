@@ -35,10 +35,6 @@ def load_library(yaml_library)
   translation
 end
 
-  # happy:
-  #   - ":)"
-  #   - "(＾ｖ＾)"
-
   # {
   #     'happy' => {
   #       :english => ":)",
