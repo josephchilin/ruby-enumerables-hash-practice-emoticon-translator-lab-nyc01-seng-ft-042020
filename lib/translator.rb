@@ -12,6 +12,13 @@ require 'yaml'
      - ":)"
      - "(＾ｖ＾)"
 
+   {
+      'happy' => {
+         :english => ":)",
+         :japanese => "(＾ｖ＾)"
+      }
+   }
+
   
 def load_library(yaml_library)
   # code goes here
