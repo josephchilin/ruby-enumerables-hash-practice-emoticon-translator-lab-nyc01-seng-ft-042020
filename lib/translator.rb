@@ -8,6 +8,10 @@ require 'yaml'
 #   - "☜(⌒▽⌒)☞"
 # => "angel" => ["O:)", - "☜(⌒▽⌒)☞" ]
 
+   happy:
+     - ":)"
+     - "(＾ｖ＾)"
+
   
 def load_library(yaml_library)
   # code goes here
