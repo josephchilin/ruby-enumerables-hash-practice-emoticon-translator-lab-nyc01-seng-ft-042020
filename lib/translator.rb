@@ -52,6 +52,7 @@ def get_english_meaning(yaml_library, japanese_emoticon)
       
     end
 
+    "Sorry, that emoticon was not found"
   
 end
 
