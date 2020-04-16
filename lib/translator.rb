@@ -25,8 +25,8 @@ def load_library(yaml_library)
   library = YAML.load_file(yaml_library)
   translation = {}
   
-  library.each do |emoji, language|
-    translation[emoji] = {}
+  library.each do |meaning, language|
+    translation[meaning] = {}
     eng_emoji = language[0]
     jap_emoji = language[1]
     
