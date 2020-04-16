@@ -50,10 +50,8 @@ def get_english_meaning(yaml_library, japanese_emoticon)
         return meaning
       end
       
-      
-      "Sorry, that emoticon was not found"
     end
-  
+      "Sorry, that emoticon was not found"
   
 end
 
