@@ -19,7 +19,6 @@ require 'yaml'
   #     }
   # }
 
-
 def load_library(yaml_library)
   # code goes here
   library = YAML.load_file(yaml_library)
