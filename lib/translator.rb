@@ -41,9 +41,8 @@ def get_japanese_emoticon(yaml_library, english_emoticon)
   
 end
 
-def get_english_meaning(file_path, japanese_emoticon)
+def get_english_meaning(yaml_library, japanese_emoticon)
   # code goes here
-  
     library = load_library(yaml_library)
   
     library.each do |emoji, language|
