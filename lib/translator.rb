@@ -46,7 +46,7 @@ def get_japanese_emoticon(yaml_library, english_emoticon)
   # code goes here
     library = load_library(yaml_library)
   
-    library.each do |emoji, language|
+    library.each do |meaning, language|
       if language[:english] == english_emoticon
         return language[:japanese]
         
