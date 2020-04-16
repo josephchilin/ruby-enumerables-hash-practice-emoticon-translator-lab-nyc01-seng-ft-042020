@@ -26,7 +26,7 @@ def load_library(yaml_library)
   translation
 end
 
-def get_japanese_emoticon(yaml_library = ".lib/emoticons.yml", english_emoticon)
+def get_japanese_emoticon(yaml_library, english_emoticon)
   # code goes here
     library = load_library(yaml_library)
   
